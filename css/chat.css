@@ -141,6 +141,14 @@
     gap: 12px;
 }
 
+.status-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
 .neural-select {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid var(--glass-border);
@@ -350,10 +358,13 @@ button.send-btn:hover {
         font-size: 0.65rem;
     }
 
+    .status-controls {
+        gap: 15px;
+        padding-top: 10px;
+    }
+
     button.send-btn {
-        width: 100%;
-        justify-content: center;
-        height: 48px;
+        flex: 1; /* Allow to share space with dropdown if needed, or full-width */
     }
 }
 
