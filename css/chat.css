@@ -254,12 +254,12 @@ input[type="text"]:focus {
 }
 
 button.send-btn {
-    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-    border: none;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
     border-radius: 10px;
     padding: 0 1.5rem;
     height: 42px;
-    color: white;
+    color: var(--text-secondary);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -269,7 +269,20 @@ button.send-btn {
     display: flex;
     align-items: center;
     gap: 10px;
-    box-shadow: 0 4px 15px rgba(0, 242, 255, 0.2);
+}
+
+button.send-btn.translate-active {
+    background: rgba(0, 255, 136, 0.1) !important;
+    color: #00ff88 !important;
+    border-color: #00ff88 !important;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.3) !important;
+}
+
+button.send-btn.translate-stop {
+    background: rgba(255, 68, 68, 0.1) !important;
+    color: #ff4444 !important;
+    border-color: #ff4444 !important;
+    box-shadow: 0 0 15px rgba(255, 68, 68, 0.3) !important;
 }
 
 button.send-btn:hover {
