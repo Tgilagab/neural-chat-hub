@@ -287,17 +287,69 @@ button.send-btn:hover {
     border-radius: 10px;
 }
 
-/* Responsive */
+/* Responsive Scaling */
 @media (max-width: 600px) {
-    .hub-container {
-        height: 95vh;
-        border-radius: 0;
-        width: 100%;
+    .chat-messages {
+        padding: 1rem;
+        gap: 1rem;
     }
+    
+    .chat-watermark {
+        font-size: 3rem;
+        letter-spacing: 8px;
+        opacity: 0.02;
+    }
+    
+    .message {
+        max-width: 92%;
+        font-size: 0.9rem;
+        padding: 0.8rem 1rem;
+    }
+
     .chat-input-area {
         padding: 1rem;
+        gap: 8px;
     }
-    .hub-header {
-        padding: 1.5rem;
+
+    .control-row {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .neural-select {
+        flex: 1 1 100%; /* Force full width on smallest screens to avoid crowding buttons */
+        order: 2;
+    }
+    
+    .icon-btn {
+        flex: 1; /* Make buttons wider on mobile for easier tapping */
+        height: 48px; /* Larger tap targets */
+    }
+
+    .input-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .meeting-label {
+        align-self: flex-start;
+        font-size: 0.65rem;
+    }
+
+    button.send-btn {
+        width: 100%;
+        justify-content: center;
+        height: 48px;
+    }
+}
+
+@media (max-width: 380px) {
+    .neural-select {
+        font-size: 0.8rem;
+    }
+    
+    .logo-section h1 {
+        font-size: 1rem;
     }
 }
