@@ -334,18 +334,23 @@ button.send-btn:hover {
     }
 
     .control-row {
-        flex-wrap: wrap;
-        gap: 8px;
+        flex-flow: column nowrap;
+        gap: 10px;
+        width: 100%;
     }
 
     .neural-select {
-        flex: 1 1 100%; /* Force full width on smallest screens to avoid crowding buttons */
-        order: 2;
+        width: 100% !important;
+        flex: none;
+        font-size: 1rem; /* Prevent iOS zoom */
+        height: 48px;
+        padding-right: 30px; /* Space for potential arrow */
     }
-    
-    .icon-btn {
-        flex: 1; /* Make buttons wider on mobile for easier tapping */
-        height: 48px; /* Larger tap targets */
+
+    button.send-btn {
+        width: 100% !important;
+        height: 48px;
+        justify-content: center;
     }
 
     .input-row {
@@ -362,10 +367,6 @@ button.send-btn:hover {
     .status-controls {
         gap: 15px;
         padding-top: 10px;
-    }
-
-    button.send-btn {
-        flex: 1; /* Allow to share space with dropdown if needed, or full-width */
     }
 }
 
