@@ -22,6 +22,7 @@ class NeuralApp {
         populateLanguages(this.ui.languageSelect);
         this.ui.micBtn.classList.add('mic-muted'); // Initial state: Muted
         this.ui.speakerBtn.classList.add('speaker-muted'); // Initial state: Muted
+        this.ui.sendBtn.classList.add('translate-stop'); // Initial state: Stopped (Red)
         this.setupEventListeners();
         this.startClock();
     }
