@@ -28,6 +28,14 @@ html, body {
 body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--bg-color);
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(112, 0, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(0, 242, 255, 0.15) 0%, transparent 50%);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Animated Background Particles */
 .background-blob {
