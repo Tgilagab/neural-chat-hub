@@ -333,40 +333,49 @@ button.send-btn:hover {
         gap: 8px;
     }
 
-    .control-row {
-        flex-flow: column nowrap;
-        gap: 10px;
-        width: 100%;
-    }
-
-    .neural-select {
-        width: 100% !important;
-        flex: none;
-        font-size: 1rem; /* Prevent iOS zoom */
-        height: 48px;
-        padding-right: 30px; /* Space for potential arrow */
-    }
-
-    button.send-btn {
-        width: 100% !important;
-        height: 48px;
-        justify-content: center;
+    .chat-input-area {
+        padding: 0.8rem;
+        gap: 6px;
     }
 
     .input-row {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 10px;
+        flex-direction: row; /* Keep URL input on one line for better height management */
+        align-items: center;
+        gap: 8px;
     }
 
     .meeting-label {
-        align-self: flex-start;
-        font-size: 0.65rem;
+        font-size: 0.6rem;
+        padding: 4px 8px;
     }
 
+    .control-row {
+        flex-direction: row; /* Keep dropdown and translate button side-by-side */
+        gap: 8px;
+    }
+
+    .neural-select {
+        font-size: 0.85rem;
+        height: 40px;
+        padding: 0 8px;
+    }
+
+    button.send-btn {
+        height: 40px;
+        padding: 0 12px;
+        font-size: 0.7rem;
+        flex: 0 0 auto;
+    }
+    
     .status-controls {
-        gap: 15px;
-        padding-top: 10px;
+        gap: 25px;
+        padding-top: 6px;
+        margin-top: 2px;
+    }
+
+    .icon-btn {
+        width: 44px;
+        height: 44px;
     }
 }
 
